@@ -5,7 +5,7 @@
 <h2>Text: 'chaos' to unleash chaos.</h2>
 <script type="text/javascript" >
   var channel, pusher;
-  pusher = new Pusher('46c5ba280c64d8511011');
+  pusher = new Pusher('98f031e5ce730aa808b2');
   channel = pusher.subscribe('trick_channel');
   channel.bind('chaos', function(data) {
     return document.location = '/chaos/';
