@@ -1,0 +1,12 @@
+<h1><%= msg %></h1>
+<hr/>
+<h1>760-303-4118</h1>
+<h2>Text: 'green', 'blue', or any color to change the lights.</h2>
+<h2>Text: 'chaos' to unleash chaos.</h2>
+<script type="text/javascript" >
+  var channel, pusher;
+  pusher = new Pusher('46c5ba280c64d8511011');
+  channel = pusher.subscribe('trick_channel');
+  channel.bind('chaos', function(data) {
+    return document.location = '/chaos/';
+  }); 
